@@ -1,0 +1,70 @@
+body {
+    background-color: #2b2b2b;
+    color: #f8f8f2;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+#mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    max-width: 300px; /* Tamaño fijo para el contenedor principal */
+}
+
+#randomButton {
+    background-color: #ff79c6;
+    color: #282a36;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 25px; /* Bordes más redondos */
+    transition: background-color 0.3s ease, margin-top 0.3s ease; /* Transición suave */
+}
+
+#randomButton:hover {
+    background-color: #bd93f9;
+}
+
+#gameContainer {
+    display: none; /* Oculto inicialmente */
+    flex-direction: column;
+    align-items: center;
+    width: 300px; /* Tamaño fijo para el contenedor */
+    height: 500px; /* Tamaño fijo para el contenedor */
+    justify-content: space-between; /* Espacio entre los elementos */
+}
+
+#gameCover {
+    width: 100%; /* Ajusta al ancho del contenedor */
+    height: 400px; /* Tamaño fijo para todas las portadas */
+    border: 5px solid #ff79c6;
+    border-radius: 15px;
+    object-fit: cover; /* Asegura que la imagen se ajuste al contenedor */
+    margin-bottom: 5px; /* Espacio entre la imagen y el nombre */
+}
+
+#gameName {
+    font-size: 24px; /* Aumenta el tamaño de la letra */
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    width: 100%; /* Ajusta al ancho del contenedor */
+    word-wrap: break-word; /* Permite que el texto se ajuste en varias líneas si es necesario */
+    margin-top: 5px; /* Ajusta el espacio entre la imagen y el nombre */
+    min-height: 50px; /* Altura mínima para el contenedor del nombre */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&display=swap');
